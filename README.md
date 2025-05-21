@@ -11,13 +11,14 @@ O sistema pertence ao domínio de comércio eletrônico (e-commerce), permitindo
 - Envio de Notificações
 
 ## Especificação de Requisitos
-RF01 - Cadastro e login de usuários.
-RF02 - Cadastro de produtos à venda.
-RF03 - Busca e listagem de produtos.
-RF04 - Adicionar produtos ao carrinho.
-RF05 - Finalização de pedidos com simulação de pagamento.
-RF06 - Registro de histórico de pedidos.
-RF07 - Envio de notificações de confirmação por e-mail.
+
+- Cadastro e login de usuários.
+- Cadastro de produtos à venda.
+- Busca e listagem de produtos.
+- Adicionar produtos ao carrinho.
+- Finalização de pedidos com simulação de pagamento.
+- Registro de histórico de pedidos.
+- Envio de notificações de confirmação por e-mail.
 
  ![alt text](images/modelos-processos.png)
 
