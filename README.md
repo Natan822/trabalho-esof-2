@@ -10,17 +10,26 @@ O sistema pertence ao domínio de comércio eletrônico (e-commerce), permitindo
 - Simulação de pagamento
 - Envio de Notificações
 
-## Especificação de Requisitos
+## Requisitos Funcionais
 
-- Cadastro e login de usuários.
-- Cadastro de produtos à venda.
-- Busca e listagem de produtos.
-- Adicionar produtos ao carrinho.
-- Finalização de pedidos com simulação de pagamento.
-- Registro de histórico de pedidos.
-- Envio de notificações de confirmação por e-mail.
+- RF01 Cadastro e login de usuários.
+- RF02 Cadastro de produtos à venda.
+- RF03 Busca e listagem de produtos.
+- RF04 Adicionar produtos ao carrinho.
+- RF05 Finalização de pedidos com simulação de pagamento.
+- RF06 Registro de histórico de pedidos.
+- RF07 Envio de notificações de confirmação por e-mail.
 
  ![alt text](images/modelos-processos.png)
+
+
+ ## Requisitos Não Funcionais
+
+- RNF01	O sistema deve seguir arquitetura de microsserviços.
+- RNF02 Cada serviço deve rodar em contêiner Docker separado.
+- RNF03 O sistema deve responder às requisições em até 2 segundos.
+- RNF04	O sistema deve expor APIs RESTful com documentação Swagger/OpenAPI.
+- RNF05 O sistema deve estar preparado para escalabilidade horizontal.
 
 ## Modelo de Processo: Metodologia Ágil - Kanban
 
