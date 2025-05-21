@@ -19,5 +19,8 @@ O sistema pertence ao domínio de comércio eletrônico (e-commerce), permitindo
 6. Registro de histórico de pedidos.
 7. Envio de notificações de confirmação por e-mail.
 
-## Modelos de Processos
-![alt text](images/modelos-processos.png)
+ ![alt text](images/modelos-processos.png)
+
+## Modelo de Processo: Metodologia Ágil - Kanban
+
+O Kanban foi escolhido por ser uma metodologia ágil enxuta, que permite visualizar o fluxo de trabalho, controlar o progresso das tarefas em tempo real e adaptar as prioridades com flexibilidade. 
