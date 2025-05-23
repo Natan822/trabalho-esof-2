@@ -22,15 +22,6 @@ O sistema pertence ao domínio de comércio eletrônico (e-commerce), permitindo
 
  ![alt text](images/modelos-processos.png)
 
-
- ## Requisitos Não Funcionais
-
-- RNF01	O sistema deve seguir arquitetura de microsserviços.
-- RNF02 Cada serviço deve rodar em contêiner Docker separado.
-- RNF03 O sistema deve responder às requisições em até 2 segundos.
-- RNF04	O sistema deve expor APIs RESTful com documentação Swagger/OpenAPI.
-- RNF05 O sistema deve estar preparado para escalabilidade horizontal.
-
 ## Modelo de Processo: Metodologia Ágil - Kanban
 
 O Kanban foi escolhido por ser uma metodologia ágil enxuta, que permite visualizar o fluxo de trabalho, controlar o progresso das tarefas em tempo real e adaptar as prioridades com flexibilidade. 
