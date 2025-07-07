@@ -16,6 +16,10 @@ class ConfigServerApplicationTests {
 	WebTestClient webTestClient;
 
 	@Test
+	void contextLoads() {
+	}
+
+	@Test
 	void testServiceRequest() {
 		webTestClient.get()
 				.uri("/test-service/default")
