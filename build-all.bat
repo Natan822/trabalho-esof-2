@@ -1,0 +1,6 @@
+start "Discovery Server Build" cmd /k "mvn -f .\discovery-server\pom.xml clean package -DskipTests"
+start "Config Server Build" cmd /k "mvn -f .\config-server\pom.xml clean package -DskipTests"
+start "Auth Service Build" cmd /k "mvn -f .\auth-service\pom.xml clean package -DskipTests"
+start "User Service Build" cmd /k "mvn -f .\user-service\pom.xml clean package -DskipTests"
+start "Carrinho Service Build" cmd /k "mvn -f .\carrinho-service\pom.xml clean package -DskipTests"
+start "Catalog Service Build" cmd /k "mvn -f .\catalog-service\pom.xml clean package -DskipTests"
