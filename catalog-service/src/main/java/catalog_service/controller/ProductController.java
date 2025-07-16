@@ -18,7 +18,7 @@ import catalog_service.service.ProductService;
 
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("api/catalog")
 public class ProductController {
     @Autowired
     private ProductService service;
