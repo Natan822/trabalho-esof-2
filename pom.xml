@@ -10,6 +10,7 @@
         <module>config-server</module>
         <module>user-service</module>
         <module>auth-service</module>
+	    <module>carrinho-service</module>
     </modules>
 
     <name>ecommerce-system</name>
