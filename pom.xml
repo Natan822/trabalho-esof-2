@@ -11,6 +11,7 @@
         <module>user-service</module>
         <module>auth-service</module>
         <module>catalog-service</module>
+	    <module>carrinho-service</module>
     </modules>
 
     <name>ecommerce-system</name>
