@@ -1,10 +1,20 @@
 package carrinho_service.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "item_carrinho")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class ItemCarrinho {
 
     @Id
@@ -22,44 +32,13 @@ public class ItemCarrinho {
 
     @ManyToOne
     @JoinColumn(name = "carrinho_id", nullable = false)
-    
-
+    @JsonBackReference
     private Carrinho carrinho;
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public Long getProdutoId() {
-        return produtoId;
-    }
-
-    public void setProdutoId(Long produtoId) {
+    public ItemCarrinho(Long produtoId, int quantidade, BigDecimal preco, Carrinho carrinho) {
         this.produtoId = produtoId;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
-    }
-
-    public BigDecimal getPreco() {
-        return preco;
-    }
-
-    public void setPreco(BigDecimal preco) {
         this.preco = preco;
-    }
-
-    public Carrinho getCarrinho() {
-        return carrinho;
-    }
-
-    public void setCarrinho(Carrinho carrinho) {
         this.carrinho = carrinho;
     }
 }
