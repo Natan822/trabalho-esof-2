@@ -1,6 +1,6 @@
 FROM openjdk:21-jdk
 
-ADD target/config-server-0.0.1-SNAPSHOT.jar config-server-0.0.1-SNAPSHOT.jar
+COPY . .
 COPY *.properties /config-server/
 
-ENTRYPOINT ["java", "-jar", "config-server-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "target/config-server-0.0.1-SNAPSHOT.jar"]
