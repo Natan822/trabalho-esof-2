@@ -99,5 +99,53 @@ jobs:
           docker-compose exec -T catalog-service mvn test
           docker-compose exec -T carrinho-service mvn test
 
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push Discovery Server
+        uses: docker/build-push-action@v6
+        with:
+          context: discovery-server
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/discovery-server:latest
+
+      - name: Build and push Config Server
+        uses: docker/build-push-action@v6
+        with:
+          context: config-server
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/config-server:latest
+
+      - name: Build and push User Service
+        uses: docker/build-push-action@v6
+        with:
+          context: user-service
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/user-service:latest
+
+      - name: Build and push Auth Service
+        uses: docker/build-push-action@v6
+        with:
+          context: auth-service
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/auth-service:latest
+
+      - name: Build and push Carrinho Service
+        uses: docker/build-push-action@v6
+        with:
+          context: carrinho-service
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/carrinho-service:latest
+
+      - name: Build and push Catalog Service
+        uses: docker/build-push-action@v6
+        with:
+          context: catalog-service
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/catalog-service:latest
+
       - name: Shut down Docker Compose
         run: docker-compose down
